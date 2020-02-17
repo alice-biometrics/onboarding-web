@@ -63,7 +63,7 @@ Add our Web component in your application adding:
 ```js
 function onSuccess(userInfo) {console.log("onSuccess: " + userInfo)}
 function onFailure(error) {console.log("onFailure: " + error)}
-function onCancel() { console.log("onFailure: " + error)}
+function onCancel() { console.log("onCancel")}
 
 new aliceonboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
 ```
@@ -88,7 +88,7 @@ aliceonboarding.logInWithSandbox(sandboxToken, userInfo)
     
     function onSuccess(userInfo) {console.log("onSuccess: " + userInfo)}
     function onFailure(error) {console.log("onFailure: " + error)}
-    function onCancel() { console.log("onFailure: " + error)}
+    function onCancel() { console.log("onCancel")}
         
     new aliceonboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
   })
