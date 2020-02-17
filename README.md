@@ -26,7 +26,7 @@ We provide a npm module (`onboarding-react`) with a web component.
 Include ALiCE Onboarding as a regular script tag on your page:
 
 ```html
-<script src='dist/alice.onboarding.min.js'></script>
+<script src='dist/aliceonboarding.umd.min.js'></script>
 ```
 
 And the CSS styles:
@@ -52,7 +52,7 @@ You can configure the onboarding flow with the following code:
 ```js
 let userToken = "<ADD-YOUR-USER-TOKEN-HERE>"
 
-let config = new alice.OnboardingConfig()
+let config = new aliceonboarding.OnboardingConfig()
   .withUserToken(userToken)
   .withAddSelfieStage()
   .withAddDocumentStage(onboarding.DocumentType.IDCARD, "ESP")
@@ -68,7 +68,7 @@ function onSuccess(userInfo) {console.log("onSuccess: " + userInfo)}
 function onFailure(error) {console.log("onFailure: " + error)}
 function onCancel() { console.log("onFailure: " + error)}
 
-new onboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
+new aliceonboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
 ```
 
 Where `userToken` is used to secure requests made by the users on their mobile devices or web clients. You should obtain it from your Backend.
@@ -84,7 +84,7 @@ Add our Web component in your application adding:
 sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>"
 userInfo = new onboarding.UserInfo(email)
 
-onboarding.logInWithSandbox(sandboxToken, userInfo)
+aliceonboarding.logInWithSandbox(sandboxToken, userInfo)
   .then(userToken => {
     // Obtain previously configured OnboardingConfig object
     let config = getOnboardingConfig(userToken, appSettings);
@@ -93,7 +93,7 @@ onboarding.logInWithSandbox(sandboxToken, userInfo)
     function onFailure(error) {console.log("onFailure: " + error)}
     function onCancel() { console.log("onFailure: " + error)}
         
-    new onboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
+    new aliceonboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
   })
   .catch(err => {
     console.error(err);
