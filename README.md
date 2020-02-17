@@ -10,7 +10,7 @@ The main features are:
 
 ## Requirements :hammer:
 
-* TODO
+* TODO 🚧
 
 ## Installation :computer:
 
@@ -53,11 +53,10 @@ You can configure the onboarding flow with the following code:
 let userToken = "<ADD-YOUR-USER-TOKEN-HERE>"
 
 let config = new alice.OnboardingConfig()
-.withUserToken(userToken)
-.withAddSelfieStage()
-.withAddDocumentStage(onboarding.DocumentType.IDCARD, "ESP")
-.withAddDocumentStage(onboarding.DocumentType.DRIVERLICENSE, "ESP")
-.withCustomLocalization("en");
+  .withUserToken(userToken)
+  .withAddSelfieStage()
+  .withAddDocumentStage(onboarding.DocumentType.IDCARD, "ESP")
+  .withAddDocumentStage(onboarding.DocumentType.DRIVERLICENSE, "ESP")
 ```
 
 ### Using ALiCE Onboarding on Production
@@ -65,23 +64,16 @@ let config = new alice.OnboardingConfig()
 Add our Web component in your application adding:
 
 ```js
-         function onSuccess(userInfo) {
-            console.log("onSuccess: " + userInfo)
-         }
-         
-         function onFailure(error) {
-            console.log("onFailure: " + error)
-         }
-         
-         function onCancel() {
-            console.log("onFailure: " + error)
-         }
-         
-         new onboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
+function onSuccess(userInfo) {console.log("onSuccess: " + userInfo)}
+function onFailure(error) {console.log("onFailure: " + error)}
+function onCancel() { console.log("onFailure: " + error)}
+
+new onboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
 ```
 
 Where `userToken` is used to secure requests made by the users on their mobile devices or web clients. You should obtain it from your Backend.
 
+TODO 🚧
 see an example [here](app/components/OnboardingProduction/index.js)
 
 ### Using ALiCE Onboarding on Trial
@@ -89,30 +81,23 @@ see an example [here](app/components/OnboardingProduction/index.js)
 Add our Web component in your application adding:
 
 ```js
-    sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>"
-    userInfo = new onboarding.UserInfo(email)
+sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>"
+userInfo = new onboarding.UserInfo(email)
 
-    onboarding.logInWithSandbox(sandboxToken, userInfo)
-      .then(userToken => {
-         let config = getOnboardingConfig(userToken, appSettings);
-         
-         function onSuccess(userInfo) {
-            console.log("onSuccess: " + userInfo)
-         }
-         
-         function onFailure(error) {
-            console.log("onFailure: " + error)
-         }
-         
-         function onCancel() {
-            console.log("onFailure: " + error)
-         }
-         
-         new onboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
-      })
-      .catch(err => {
-        console.error(err);
-      });
+onboarding.logInWithSandbox(sandboxToken, userInfo)
+  .then(userToken => {
+    // Obtain previously configured OnboardingConfig object
+    let config = getOnboardingConfig(userToken, appSettings);
+    
+    function onSuccess(userInfo) {console.log("onSuccess: " + userInfo)}
+    function onFailure(error) {console.log("onFailure: " + error)}
+    function onCancel() { console.log("onFailure: " + error)}
+        
+    new onboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
+  })
+  .catch(err => {
+    console.error(err);
+  });
 ```
 
 Where `sandboxToken` is a temporal token for testing the technology in a development/testing environment. 
