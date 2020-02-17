@@ -1,4 +1,4 @@
-# onboarding-web :earth_africa: [![doc](https://img.shields.io/badge/doc-onboarding-51CB56)](https://docs.alicebiometrics.com/onboarding/)
+# onboarding-web :earth_africa: [![doc](https://img.shields.io/badge/doc-onboarding-51CB56)](https://docs.alicebiometrics.com/onboarding/) [![doc-web](https://img.shields.io/badge/doc-web-51CB56)](https://docs.alicebiometrics.com/onboarding/sdk/web/)
 
 ALiCE Onboarding Web component allows the automatic capture of documents and video selfie of the user in real time from the camera of your device. It also simplifies the communication with the onboarding API to facilitate rapid integration and development. It manages the onboarding flow configuration: requested documents and order.
 
@@ -104,6 +104,7 @@ Where `sandboxToken` is a temporal token for testing the technology in a develop
 
 An `email` is required to associate it to an ALiCE `user_id`.
 
+* TODO 🚧
 see an example [here](app/components/OnboardingTrial/index.js)
 
 
