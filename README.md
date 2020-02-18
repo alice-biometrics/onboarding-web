@@ -67,8 +67,8 @@ new aliceonboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess,
 
 Where `userToken` is used to secure requests made by the users on their mobile devices or web clients. You should obtain it from your Backend.
 
-TODO 🚧
-see an example [here](app/components/OnboardingProduction/index.js)
+* TODO Add example 🚧
+
 
 ### Using ALiCE Onboarding on Trial
 
@@ -100,10 +100,17 @@ aliceonboarding.logInWithSandbox(sandboxToken, userInfo)
 
 Where `sandboxToken` is a temporal token for testing the technology in a development/testing environment. 
 
-An `email` is required to associate it to an ALiCE `user_id`.
+An `email` is required to associate it to an ALiCE Onboarding `user_id`. You can also add some additional information from your user.
 
-* TODO 🚧
-see an example [here](app/components/OnboardingTrial/index.js)
+```js
+userInfo = new onboarding.UserInfo(
+  email,
+  firstName,
+  lastName
+)
+```
+
+* TODO Add example 🚧
 
 
 ## Documentation :page_facing_up:
