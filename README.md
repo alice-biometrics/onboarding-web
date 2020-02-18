@@ -61,7 +61,7 @@ new aliceonboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess,
 
 Where `userToken` is used to secure requests made by the users on their mobile devices or web clients. You should obtain it from your Backend.
 
-* TODO Add example 🚧
+Check our JSFiddle demo [here](). Remember you must add your `USER_TOKEN` credentials.
 
 
 ### Using ALiCE Onboarding on Trial
@@ -104,17 +104,9 @@ userInfo = new onboarding.UserInfo(
 )
 ```
 
-* TODO Add example 🚧
+Check our JSFiddle demo [here](). Remember you must add your `SANDBOX_TOKEN` credentials.
 
 ## Customize
-
-##### Appearance
-
-Modify the CSS styles:
-
-```html
-<link rel='stylesheet' href='dist/style.css>
-```
 
 ##### Localization
 
@@ -128,6 +120,14 @@ let config = new aliceonboarding.OnboardingConfig()
   .withAddDocumentStage(onboarding.DocumentType.IDCARD, "ESP")
   .withAddDocumentStage(onboarding.DocumentType.DRIVERLICENSE, "ESP")
   .withCustomLocalization(language)
+```
+
+##### Appearance
+
+Modify the CSS styles:
+
+```html
+<link rel='stylesheet' href='dist/style.css>
 ```
 
 
