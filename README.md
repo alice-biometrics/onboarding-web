@@ -23,12 +23,6 @@ Include ALiCE Onboarding as a regular script tag on your page:
 <script src='dist/aliceonboarding.umd.min.js'></script>
 ```
 
-And the CSS styles:
-
-```html
-<link rel='stylesheet' href='dist/style.css>
-```
-
 ## Usage :wave:
 
 ### Reserve a HTML element in your application
@@ -79,8 +73,8 @@ For more information about the Sandbox, please check the following [doc](https:/
 Use the `aliceonboarding.logInWithSandbox` to ease the integration.
 
 ```js
-sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>"
-userInfo = new onboarding.UserInfo(email)
+let sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>"
+let userInfo = new onboarding.UserInfo(email)
 
 aliceonboarding.logInWithSandbox(sandboxToken, userInfo)
   .then(userToken => {
@@ -111,6 +105,30 @@ userInfo = new onboarding.UserInfo(
 ```
 
 * TODO Add example 🚧
+
+## Customize
+
+##### Appearance
+
+Modify the CSS styles:
+
+```html
+<link rel='stylesheet' href='dist/style.css>
+```
+
+##### Localization
+
+```js
+let userToken = "<ADD-YOUR-USER-TOKEN-HERE>"
+let language = "en" (default)
+
+let config = new aliceonboarding.OnboardingConfig()
+  .withUserToken(userToken)
+  .withAddSelfieStage()
+  .withAddDocumentStage(onboarding.DocumentType.IDCARD, "ESP")
+  .withAddDocumentStage(onboarding.DocumentType.DRIVERLICENSE, "ESP")
+  .withCustomLocalization(language)
+```
 
 
 ## Documentation :page_facing_up:
