@@ -11,12 +11,9 @@ The main features are:
 
 ## Installation :computer:
 
-We provide a npm module (`onboarding-react`) with a web component. 
-
-### How do I get the package?
-
-* Contact us through the following mail: support@alicebiometrics.com 📬
-* Through public registry (coming soon 🚧)
+```
+npm install aliceonboarding
+```
 
 ### Import the library
 
@@ -58,7 +55,7 @@ let config = new aliceonboarding.OnboardingConfig()
 
 ### Using ALiCE Onboarding on Production
 
-Add our Web component in your application adding:
+Once you configured the ALiCE Onboarding Flow, you can run the process with:
 
 ```js
 function onSuccess(userInfo) {console.log("onSuccess: " + userInfo)}
@@ -75,7 +72,11 @@ see an example [here](app/components/OnboardingProduction/index.js)
 
 ### Using ALiCE Onboarding on Trial
 
-Add our Web component in your application adding:
+On the other hand, if you want to test the technology without integrate it with your backend, you can use our Sandbox Service. This service associates a user mail with the ALiCE Onboarding `user_id`. You can create an user and obtain its `USER_TOKEN` already linked with the email.
+
+For more information about the Sandbox, please check the following [doc](https://docs.alicebiometrics.com/onboarding/access.html#using-alice-onboarding-sandbox).
+
+Use the `aliceonboarding.logInWithSandbox` to ease the integration.
 
 ```js
 sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>"
