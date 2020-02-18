@@ -61,8 +61,6 @@ new aliceonboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess,
 
 Where `userToken` is used to secure requests made by the users on their mobile devices or web clients. You should obtain it from your Backend.
 
-Check our JSFiddle demo [here](). Remember you must add your `USER_TOKEN` credentials.
-
 
 ### Using ALiCE Onboarding on Trial
 
@@ -70,7 +68,7 @@ On the other hand, if you want to test the technology without integrate it with 
 
 For more information about the Sandbox, please check the following [doc](https://docs.alicebiometrics.com/onboarding/access.html#using-alice-onboarding-sandbox).
 
-Use the `aliceonboarding.logInWithSandbox` to ease the integration.
+Use the `aliceonboarding.logInWithSandbox` function to ease the integration.
 
 ```js
 let sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>"
@@ -104,7 +102,9 @@ userInfo = new onboarding.UserInfo(
 )
 ```
 
-Check our JSFiddle demo [here](). Remember you must add your `SANDBOX_TOKEN` credentials.
+## Demo
+
+Check our JSFiddle demo [here](https://jsfiddle.net/alicebiometrics/05L91a2u/55/). Remember you must add your `SANDBOX_TOKEN` credentials. If you have already integrated ALiCE Onboarding in your backend, remove the `aliceonboarding.logInWithSandbox` function and use your retrieved `USER_TOKEN`. 
 
 ## Customize
 
