@@ -43,8 +43,8 @@ let userToken = "<ADD-YOUR-USER-TOKEN-HERE>"
 let config = new aliceonboarding.OnboardingConfig()
   .withUserToken(userToken)
   .withAddSelfieStage()
-  .withAddDocumentStage(onboarding.DocumentType.IDCARD, "ESP")
-  .withAddDocumentStage(onboarding.DocumentType.DRIVERLICENSE, "ESP")
+  .withAddDocumentStage(aliceonboarding.DocumentType.IDCARD, "ESP")
+  .withAddDocumentStage(aliceonboarding.DocumentType.DRIVERLICENSE, "ESP")
 ```
 
 ### Using ALiCE Onboarding on Production
@@ -72,7 +72,7 @@ Use the `aliceonboarding.logInWithSandbox` function to ease the integration.
 
 ```js
 let sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>"
-let userInfo = new onboarding.UserInfo(email)
+let userInfo = new aliceonboarding.UserInfo(email)
 
 aliceonboarding.logInWithSandbox(sandboxToken, userInfo)
   .then(userToken => {
