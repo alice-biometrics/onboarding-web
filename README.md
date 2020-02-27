@@ -163,7 +163,8 @@ authenticator.execute()
 
 ## Demo :rocket:
 
-Check our JSFiddle demo [here](https://jsfiddle.net/alicebiometrics/nskyhfou/embedded/). Remember you must add your `SANDBOX_TOKEN` credentials. If you have already integrated ALiCE Onboarding in your backend, remove the `aliceonboarding.logInWithSandbox` function and use your retrieved `USER_TOKEN`. 
+Check our JSFiddle demo [here](https://jsfiddle.net/alicebiometrics/nskyhfou/embedded/result,js,html,css/dark/). Remember you must add your `SANDBOX_TOKEN` credentials. If you have already integrated ALiCE Onboarding in your backend, remove the `aliceonboarding.logInWithSandbox` function and use your retrieved `USER_TOKEN`. 
+
 
 ## Customisation :gear:
 
