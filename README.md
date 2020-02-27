@@ -10,7 +10,7 @@ The main features are:
 
 ## Table of Contents
 - [Installation :computer:](#installation-computer)
-- [Usage :wave:](#usage-wave)
+- [Getting Started :chart_with_upwards_trend:](#getting-started-chart_with_upwards_trend)
   * [Import the library](#import-the-library)
   * [HTML](#html)
   * [Configuration](#configuration)
@@ -32,7 +32,7 @@ npm install aliceonboarding
 ```
 
 
-## Usage :wave:
+## Getting Started :chart_with_upwards_trend:
 
 
 ### Import the library
