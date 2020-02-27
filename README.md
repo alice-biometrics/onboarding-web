@@ -8,12 +8,32 @@ The main features are:
 - Communication with the onboarding API to facilitate rapid integration and development.
 - Manage the onboarding flow configuration: requested documents and order.
 
+## Table of Contents
+- [Installation :computer:](#installation-computer)
+- [Usage :wave:](#usage-wave)
+  * [Import the library](#import-the-library)
+  * [HTML](#html)
+  * [Configuration](#configuration)
+  * [Run ALiCE Onboarding](#run-alice-onboarding)
+- [Authentication :closed_lock_with_key:](#authentication-closed_lock_with_key)
+  * [Trial](#trial)
+  * [Production](#production)
+- [Demo :rocket:](#demo-rocket)
+- [Customisation :gear:](#customisation-gear)
+- [Documentation :page_facing_up:](#documentation-page_facing_up)
+- [Contact :mailbox_with_mail:](#contact-mailbox_with_mail)
+
+
 
 ## Installation :computer:
 
 ```
 npm install aliceonboarding
 ```
+
+
+## Usage :wave:
+
 
 ### Import the library
 
@@ -23,9 +43,7 @@ Include ALiCE Onboarding as a regular script tag on your page:
 <script src='dist/aliceonboarding.umd.min.js'></script>
 ```
 
-## Usage :wave:
-
-### Reserve a HTML element in your application
+### HTML
 
 Add a div element with onboarding tag inside in your page to load the Alice Onboarding component:
 
@@ -47,7 +65,9 @@ let config = new aliceonboarding.OnboardingConfig()
   .withAddDocumentStage(aliceonboarding.DocumentType.DRIVERLICENSE, "ESP")
 ```
 
-### Using ALiCE Onboarding on Production
+Where `userToken` is used to secure requests made by the users on their mobile devices or web clients. You should obtain it from your Backend.
+
+### Run ALiCE Onboarding
 
 Once you configured the ALiCE Onboarding Flow, you can run the process with:
 
@@ -59,54 +79,93 @@ function onCancel() { console.log("onCancel")}
 new aliceonboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
 ```
 
-Where `userToken` is used to secure requests made by the users on their mobile devices or web clients. You should obtain it from your Backend.
+## Authentication :closed_lock_with_key:
 
+How can we get the `userToken` to start testing ALiCE Onboarding technology?
 
-### Using ALiCE Onboarding on Trial
+`AliceOnboarding` can be used with two differnet authentication modes:
 
-On the other hand, if you want to test the technology without integrate it with your backend, you can use our Sandbox Service. This service associates a user mail with the ALiCE Onboarding `user_id`. You can create an user and obtain its `USER_TOKEN` already linked with the email.
+* Trial (Using ALiCE Onboarding Sandbox): Recommended only in the early stages of integration.
+    - Pros: This mode do not need backend integration.
+    - Cons: Security.
+* Production (Using your Backend): In a production deployment we strongly recommend to use your backend to obtain required TOKENS.
+    - Pros: Security. Only your backend is able to do critical operations.
+    - Cons: Needs some integration in your backend.
 
-For more information about the Sandbox, please check the following [doc](https://docs.alicebiometrics.com/onboarding/access.html#using-alice-onboarding-sandbox).
+### Trial
 
-Use the `aliceonboarding.logInWithSandbox` function to ease the integration.
+If you want to test the technology without integrate it with your backend, you can use our Sandbox Service. This service associates a user mail with the ALiCE Onboarding `user_id`. You can create an user and obtain its `USER_TOKEN` already linked with the email.
+
+Use the `SandboxAuthenticator` class to ease the integration.
 
 ```js
-let sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>"
-let userInfo = new aliceonboarding.UserInfo(email)
+let sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>";
+let userInfo = UserInfo(email: email, // required
+                        firstName: firstName, // optional 
+                        lastName: lastName);  // optional 
+                        
+let authenticator = new aliceonboarding.SandboxAuthenticator(sandboxToken = sandboxToken, userInfo = userInfo);
 
-aliceonboarding.logInWithSandbox(sandboxToken, userInfo)
-  .then(userToken => {
-    // Obtain previously configured OnboardingConfig object
-    let config = getOnboardingConfig(userToken, appSettings);
-    
-    function onSuccess(userInfo) {console.log("onSuccess: " + userInfo)}
-    function onFailure(error) {console.log("onFailure: " + error)}
-    function onCancel() { console.log("onCancel")}
-        
-    new aliceonboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
-  })
-  .catch(err => {
-    console.error(err);
-  });
+authenticator.execute()
+.then( userToken => {  
+   // Configure ALiCE Onboarding with the OnboardingConfig
+   // Then, Run the ALiCE Onboarding Flow
+})
+.catch(err => {
+  // Inform the user about Authentication Errors
+});
 ```
 
 Where `sandboxToken` is a temporal token for testing the technology in a development/testing environment. 
 
-An `email` is required to associate it to an ALiCE Onboarding `user_id`. You can also add some additional information from your user.
+An `email` parameter in `UserInfo` is required to associate it to an ALiCE Onboarding `user_id`. You can also add some additional information from your user as `firstName` and `lastName`.
+
+For more information about the Sandbox, please check the following [doc](https://docs.alicebiometrics.com/onboarding/access.html#using-alice-onboarding-sandbox).
+
+### Production
+
+On the other hand, for a production environments we strongly recommend to use your backend to obtain required `USER_TOKEN`.
+
+You can implement the `Authenticator` protocol available in the `AliceOnboarding` framework.
 
 ```js
-userInfo = new onboarding.UserInfo(
-  email,
-  firstName,
-  lastName
-)
+export class MyBackendAuthenticator extends Authenticator {
+  constructor() {
+    super();
+  }
+  execute() {
+    return new Promise((resolve, reject) => {
+    
+      // Add here your code to retrieve the user token from your backend
+
+      let userToken = "fakeUserToken";
+      resolve(userToken);
+    });
+  }
+}
 ```
 
-## Demo
+In a very similar way to the authentication available with the sandbox:
+
+```swift
+                        
+let authenticator = MyBackendAuthenticator()
+
+authenticator.execute()
+.then( userToken => {  
+   // Configure ALiCE Onboarding with the OnboardingConfig
+   // Then, Run the ALiCE Onboarding Flow
+})
+.catch(err => {
+  // Inform the user about Authentication Errors
+});
+```
+
+## Demo :rocket:
 
 Check our JSFiddle demo [here](https://jsfiddle.net/alicebiometrics/nskyhfou/embedded/). Remember you must add your `SANDBOX_TOKEN` credentials. If you have already integrated ALiCE Onboarding in your backend, remove the `aliceonboarding.logInWithSandbox` function and use your retrieved `USER_TOKEN`. 
 
-## Customize
+## Customisation :gear:
 
 ##### Localization
 
