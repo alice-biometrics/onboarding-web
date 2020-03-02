@@ -88,7 +88,7 @@ How can we get the `userToken` to start testing ALiCE Onboarding technology?
 `AliceOnboarding` can be used with two differnet authentication modes:
 
 * Trial (Using ALiCE Onboarding Sandbox): Recommended only in the early stages of integration.
-    - Pros: This mode do not need backend integration.
+    - Pros: This mode does not need backend integration.
     - Cons: Security.
 * Production (Using your Backend): In a production deployment we strongly recommend to use your backend to obtain required TOKENS.
     - Pros: Security. Only your backend is able to do critical operations.
@@ -96,7 +96,7 @@ How can we get the `userToken` to start testing ALiCE Onboarding technology?
 
 ### Trial
 
-If you want to test the technology without integrate it with your backend, you can use our Sandbox Service. This service associates a user mail with the ALiCE Onboarding `user_id`. You can create an user and obtain its `USER_TOKEN` already linked with the email.
+If you want to test the technology without integrate it with your backend, you can use our Sandbox Service. This service associates a user mail with the ALiCE Onboarding `user_id`. You can create a user and obtain his `USER_TOKEN` already linked with the email.
 
 Use the `SandboxAuthenticator` class to ease the integration.
 
