@@ -1,4 +1,4 @@
-# onboarding-web :earth_africa: 
+# onboarding-web <img src="https://github.com/alice-biometrics/custom-emojis/blob/master/images/web.png" width="26">
 [![npm version](https://img.shields.io/npm/v/aliceonboarding.svg?style=flat)](https://www.npmjs.com/package/aliceonboarding)
 [![demo](https://img.shields.io/badge/demo-jsfiddle-51CB56)](https://jsfiddle.net/alicebiometrics/62rfatbg/embedded/js,result,html,css/dark/) [![doc](https://img.shields.io/badge/doc-onboarding-51CB56)](https://docs.alicebiometrics.com/onboarding/) [![doc-web](https://img.shields.io/badge/doc-web-51CB56)](https://docs.alicebiometrics.com/onboarding/sdk/web/)
 
