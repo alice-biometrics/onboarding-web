@@ -78,7 +78,7 @@ function onSuccess(userInfo) {console.log("onSuccess: " + userInfo)}
 function onFailure(error) {console.log("onFailure: " + error)}
 function onCancel() { console.log("onCancel")}
 
-new aliceonboarding.Onboarding("#alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
+new aliceonboarding.Onboarding("alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
 ```
 
 ## Authentication :closed_lock_with_key:
@@ -102,11 +102,11 @@ Use the `SandboxAuthenticator` class to ease the integration.
 
 ```js
 let sandboxToken = "<ADD-YOUR-SANDBOX-TOKEN-HERE>";
-let userInfo = UserInfo(email: email, // required
+let userInfo = new aliceonboarding.UserInfo(email: email, // required
                         firstName: firstName, // optional 
                         lastName: lastName);  // optional 
                         
-let authenticator = new aliceonboarding.SandboxAuthenticator(sandboxToken = sandboxToken, userInfo = userInfo);
+let authenticator = new aliceonboarding.SandboxAuthenticator(sandboxToken, userInfo);
 
 authenticator.execute()
 .then( userToken => {  
@@ -158,7 +158,7 @@ authenticator.execute()
    // Configure ALiCE Onboarding with the OnboardingConfig
    // Then, Run the ALiCE Onboarding Flow
 })
-.catch(err => {
+.catch( error => {
   // Inform the user about Authentication Errors
 });
 ```
