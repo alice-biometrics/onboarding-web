@@ -63,11 +63,38 @@ let userToken = "<ADD-YOUR-USER-TOKEN-HERE>"
 let config = new aliceonboarding.OnboardingConfig()
   .withUserToken(userToken)
   .withAddSelfieStage()
-  .withAddDocumentStage(aliceonboarding.DocumentType.IDCARD, "ESP")
-  .withAddDocumentStage(aliceonboarding.DocumentType.DRIVERLICENSE, "ESP")
+  .withAddDocumentStage(aliceonboarding.DocumentType.IDCARD)
+  .withAddDocumentStage(aliceonboarding.DocumentType.DRIVERLICENSE)
 ```
 
 Where `userToken` is used to secure requests made by the users on their mobile devices or web clients. You should obtain it from your Backend.
+
+#### Selfie stage configuration parameters
+
+`withAddSelfieStage` has a boolean parameter to indicate if the selfie capture should be triggered manually by clicking a buton or automatically when a face is detected. Its default value is `false`.
+
+#### Document stage configuration parameters
+
+`withAddDocumentStage` has the following parameters (in order):
+* `documentType`: type of document to capture. The enum `aliceonboarding.DocumentType` can be used to indicate the type.
+* `documentCapturerType`: type of capturer to use. The enum `aliceonboarding.DocumentCapturerType` can be used to indicate the capturer.  Default value is `DocumentCapturerType.FILE` meaning that the documents will be uploaded as files. You can set it to `DocumentCapturerType.CAMERA` to use the webcam or set it to `DocumentCapturerType.ALL` to allow both options to the user.
+* `automaticCapture`: boolean parameter to indicate if the document capture should be triggered manually by clicking a buton or automatically when a document is detected. Default value is `false`.
+* `issuingCountry`: country ISO 3166-1 alpha-3 code. Don't set it to allow the user to choose the country.
+
+```js
+export const DocumentType = {
+  IDCARD: "idcard",
+  DRIVERLICENSE: "driverlicense",
+  RESIDENCEPERMIT: "residencepermit",
+  PASSPORT: "passport"
+};
+
+export const DocumentCapturerType = {
+  CAMERA: "camera",
+  FILE: "file",
+  ALL: "all"
+};
+```
 
 ### Run ALiCE Onboarding
 
@@ -179,8 +206,8 @@ let language = "en" (default)
 let config = new aliceonboarding.OnboardingConfig()
   .withUserToken(userToken)
   .withAddSelfieStage()
-  .withAddDocumentStage(onboarding.DocumentType.IDCARD, "ESP")
-  .withAddDocumentStage(onboarding.DocumentType.DRIVERLICENSE, "ESP")
+  .withAddDocumentStage(onboarding.DocumentType.IDCARD)
+  .withAddDocumentStage(onboarding.DocumentType.DRIVERLICENSE)
   .withCustomLocalization(language)
 ```
 
