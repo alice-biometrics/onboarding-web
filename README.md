@@ -51,7 +51,7 @@ npm install aliceonboarding
 import { Onboarding, OnboardingConfig, DocumentType } from "aliceonboarding";
 ```
 
-Note: using this import style you won't need the namespace `aliceonboarding` on the examples below.
+> :warning: Using this import style you won't need the namespace `aliceonboarding` on the examples below.
 
 ### HTML
 
