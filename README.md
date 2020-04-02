@@ -11,7 +11,6 @@ The main features are:
 - Manage the onboarding flow configuration: requested documents and order.
 
 ## Table of Contents
-- [Installation :computer:](#installation-computer)
 - [Getting Started :chart_with_upwards_trend:](#getting-started-chart_with_upwards_trend)
   * [Import the library](#import-the-library)
   * [HTML](#html)
@@ -27,22 +26,29 @@ The main features are:
 
 
 
-## Installation :computer:
-
-```
-npm install aliceonboarding
-```
-
-
 ## Getting Started :chart_with_upwards_trend:
 
 
 ### Import the library
 
+#### HTML Script Tag Include
+
 Include ALiCE Onboarding as a regular script tag on your page:
 
 ```html
-<script src='dist/aliceonboarding.umd.min.js'></script>
+<script src='https://unpkg.com/aliceonboarding@latest/dist/aliceonboarding.min.js'></script>
+```
+
+#### NPM style import
+
+You can also import it as a module into your own JS build system (tested with Webpack).
+
+```
+npm install aliceonboarding
+```
+
+```
+import { Onboarding, OnboardingConfig, DocumentType } from "aliceonboarding";
 ```
 
 ### HTML
