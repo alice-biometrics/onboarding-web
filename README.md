@@ -51,6 +51,8 @@ npm install aliceonboarding
 import { Onboarding, OnboardingConfig, DocumentType } from "aliceonboarding";
 ```
 
+Note: using this import style you won't need the namespace `aliceonboarding` on the examples below.
+
 ### HTML
 
 Add a div element with onboarding tag inside in your page to load the Alice Onboarding component:
