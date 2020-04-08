@@ -53,6 +53,8 @@ import { Onboarding, OnboardingConfig, DocumentType } from "aliceonboarding";
 
 > :warning: Using this import style you won't need the namespace `aliceonboarding` on the examples below.
 
+> :warning: This module requires ES9.
+
 ### HTML
 
 Add a div element with onboarding tag inside in your page to load the Alice Onboarding component:
@@ -219,13 +221,25 @@ let config = new aliceonboarding.OnboardingConfig()
   .withCustomLocalization(language)
 ```
 
-##### Appearance
+## Extra
 
-Modify the CSS styles:
+### Welcome 🎁
 
-```html
-<link rel='stylesheet' href='dist/style.css>
-```
+We provide an additional component for retrieving the user information (email, first name and/or last name). You can use this component before the onboarding process to retrieve this info in case you don't already have it.
+
+```js
+  let config = {
+    language: "en",
+    requiredInfo: ["email"] // Possible options are "email", "firstName" and/or "lastName"
+  };
+  
+  function onUserInfo(userInfo) {} // Callback that will receive the user information
+
+  new aliceonboarding.OnboardingWelcome("alice-onboarding-mount", config).run(
+    onUserInfo
+  );
+ ```
+
 
 
 ## Documentation :page_facing_up:
