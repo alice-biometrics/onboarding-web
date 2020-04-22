@@ -39,6 +39,12 @@ Include ALiCE Onboarding as a regular script tag on your page:
 <script src='https://unpkg.com/aliceonboarding@latest/dist/aliceonboarding.min.js'></script>
 ```
 
+And its CSS:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/aliceonboarding@latest/dist/aliceonboarding.css" />
+```
+
 #### NPM style import
 
 You can also import it as a module into your own JS build system (tested with Webpack).
@@ -49,6 +55,7 @@ npm install aliceonboarding
 
 ```
 import { Onboarding, OnboardingConfig, DocumentType } from "aliceonboarding";
+import "aliceonboarding/dist/aliceonboarding.css";
 ```
 
 > :warning: Using this import style you won't need the namespace `aliceonboarding` on the examples below.
@@ -208,6 +215,20 @@ Check our JSFiddle demo [here](https://jsfiddle.net/alicebiometrics/62rfatbg/emb
 ## Customisation :gear:
 
 ##### Localization
+
+Supported languages are:
+- Catalan
+- Chinese (simplified)
+- English
+- French
+- Galician
+- German
+- Italian
+- Spanish
+- Polish
+- Portuguese
+- Russian
+- Turkish
 
 ```js
 let userToken = "<ADD-YOUR-USER-TOKEN-HERE>"
