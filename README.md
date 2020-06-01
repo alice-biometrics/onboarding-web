@@ -16,7 +16,7 @@ The main features are:
   * [HTML](#html)
   * [Configuration](#configuration)
   * [Run ALiCE Onboarding](#run-alice-onboarding)
-- [Onboarding Commands] (#onboarding-commands)
+- [Onboarding Commands](#onboarding-commands)
 - [Authentication :closed_lock_with_key:](#authentication-closed_lock_with_key)
   * [Trial](#trial)
   * [Production](#production)
