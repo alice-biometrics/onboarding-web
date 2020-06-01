@@ -125,6 +125,168 @@ function onCancel() { console.log("onCancel")}
 new aliceonboarding.Onboarding("alice-onboarding-mount", config).run(onSuccess, onFailure, onCancel);
 ```
 
+## Onboarding Commands
+ALiCE Onboarding Client SDK can be used in two different ways, by commands (OnboardingCommands) or by full flow (Onboarding). The commands allow you to open the grabber and do a series of operations independently. Available operations are as follows:
+
+* Get User Status
+* Add Selfie
+* Create Document
+* Add Document
+* Get supported documents
+* Authenticate a User already enrolled and authorized
+* Get Documents supported
+
+### Initialize Onboarding Commands
+
+To get the userToken please see the authentication section.
+
+```js
+let config = new aliceonboarding.OnboardingConfig()
+.withCustomLocalization("en");
+
+let onboardingCommands = new aliceonboarding.OnboardingCommands(userToken, config);
+```
+
+### Get status command
+
+Returns an ALiCE Onboarding User Status
+
+* Parameter onSuccess: This handler will give you call back inside block when success response with the user status.
+
+* Parameter onError: This handler will give you call back inside block when error response is recieved.
+
+```js
+onboardingCommands.getUserStatus(
+      (userStatusResult) => { // onSuccess
+              console.log(userStatusResult)
+          },
+      (error) => { //onError
+              console.error(error)
+          }
+  );
+```
+
+### Adding selfie command
+
+Presents an ALiCE Onboarding Selfie Capture View sending a video directly to ALiCE Onboarding platform.
+
+* Parameter onSuccess: This handler will give you call back inside block when the Selfie was added.
+
+* Parameter onCancel: This handler will give you call back inside block when user cancel the stage.
+
+```js
+onboardingCommands.addSelfie(
+      (succesResult) => { // onSuccess
+              console.log(succesResult)
+      },
+      (cancelResult) => { //onCancel
+              console.error(cancelResult)
+          }
+     );
+```
+
+### Create document command
+
+Creates a document given the type and the issuingCountry:
+
+* Parameter documentType: DocumentType.
+
+* Parameter issuingCountry: String value. You can check supported documents with the command getDocumentsSupported.
+
+* Parameter callback: This handler will give you call back inside block when response is recieved.
+
+On onSuccess, it returns a result with the document_id on the success content. This identifier (documentId) is neccessary to add documents.
+
+```js
+onboardingCommands.createDocument(
+    "passport",   //documentType
+    "ESP",        //issuingCountry
+    (result) => { //onSuccess
+            console.log(result.document_id)   //returns the document id of the created document
+        },
+    (error) => { //onError
+            console.error(error)
+        }
+    );
+```
+
+### Add document command
+Presents an ALiCE Onboarding Document Capture View sending images to ALiCE Onboarding platform
+
+* Parameter documentId: Document identifier given by createDocument command
+
+* Parameter documentType: DocumentType.
+
+* Parameter issuingCountry: String value. You can check supported documents with the command getDocumentsSupported.
+
+* Parameter side: DocumentSide.
+
+* Parameter onSuccess: This handler will give you call back inside block when response the document was captured.
+
+* Parameter onCancel: This handler will give you call back inside block when user cancel the stage.
+
+```js
+onboardingCommands.addDocument(
+    result.document_id,        //with the document_id of the previously created document, look at the previous command.
+    "passport",                //documentType
+    "ESP",                     //issuingCountry
+    "back",                     //documentSide  (front or back)
+    (result) => { //onSuccess
+            console.log(result)
+         },
+    (error) => { //onError
+            console.error(error)
+        }
+    (cancel) => { //onCancel
+            console.error(cancel)
+    }
+);
+```
+
+### Authenticate a User already enrolled and authorized
+
+Present an ALiCE Onboarding Authenticate Capture View sending a video directly to ALiCE Onboarding platform and checking if user is Login allowed or not.
+
+* Parameter onSuccess: This handler will give you call back inside block when the authentication is done.
+
+* Parameter onError: This handler will give you call back inside block when errors response is recieved.
+
+* Parameter onCancel: This handler will give you call back inside block when user cancel the stage.
+
+```js
+onboardingCommands.authenticate(
+       (result) => { // onSuccess
+              console.log(result)
+          },
+      (cancel) => { //onCancel
+              console.error(cancel)
+          }
+      (error) => { //onError
+              console.error(error)
+          }
+);
+```
+
+### Get supported documents
+
+Returns an ALiCE Onboarding supported documents (hierarchically ordered).
+
+* Parameter onSuccess: This handler will give you call back inside block when success response is recieved.
+
+* Parameter onError: This handler will give you call back inside block when error response is recieved.
+
+```js
+onboardingCommands.getDocumentsSupported(
+     (suportedDocuments) => { // onSuccess
+              console.log(suportedDocuments)
+          },
+      (error) => { //onError
+              console.error(error)
+          }
+);
+``` 
+
+
 ## Authentication :closed_lock_with_key:
 
 How can we get the `userToken` to start testing ALiCE Onboarding technology?
