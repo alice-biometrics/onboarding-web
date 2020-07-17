@@ -418,9 +418,10 @@ We provide an additional component for retrieving the user information (email, f
   };
   
   function onUserInfo(userInfo) {} // Callback that will receive the user information
+  function onCancel() {} // Callback to handle cancellation
 
   new aliceonboarding.OnboardingWelcome("alice-onboarding-mount", config).run(
-    onUserInfo
+    onUserInfo, onCancel
   );
  ```
 
