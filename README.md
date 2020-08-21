@@ -427,6 +427,7 @@ let config = new aliceonboarding.OnboardingConfig()
   .withAddDocumentStage(onboarding.DocumentType.IDCARD)
   .withTheme("corporate", "minimal", "square")
 ```
+NOTE: only supported with Onboarding Flow.
 
 ## Extra
 
