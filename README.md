@@ -405,6 +405,29 @@ let config = new aliceonboarding.OnboardingConfig()
   .withCustomLocalization(language)
 ```
 
+##### Themes
+
+The SDK is provided with themes for:
+- Typography (**"corporate"**, "modern", "classic")
+- Icons (**"classic"**, "modern", "minimal")
+- Icons variant (**"circle"**, "square", "shape")
+
+Note: default values are in bold.
+
+You can choose the themes with the OnboardingConfig method `withTheme`. That has the following parameters:
+- Typography theme
+- Icon theme (Optional. Default value is "minimal")
+- Icon variant (Optional. Default value is "circle")
+
+Example:
+```
+let config = new aliceonboarding.OnboardingConfig()
+  .withUserToken(userToken)
+  .withAddSelfieStage()
+  .withAddDocumentStage(onboarding.DocumentType.IDCARD)
+  .withTheme("corporate", "minimal", "square")
+```
+
 ## Extra
 
 ### Welcome 🎁
