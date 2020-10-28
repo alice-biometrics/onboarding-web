@@ -11,6 +11,7 @@ The main features are:
 - Manage the onboarding flow configuration: requested documents and order.
 
 ## Table of Contents
+- [Requirements](#requirements)
 - [Getting Started :chart_with_upwards_trend:](#getting-started-chart_with_upwards_trend)
   * [Import the library](#import-the-library)
   * [HTML](#html)
@@ -26,9 +27,11 @@ The main features are:
 - [Contact :mailbox_with_mail:](#contact-mailbox_with_mail)
 
 
+## Requirements
+
+As this SDK uses [`getUserMedia`](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) for accessing the webcam a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) is required when using it.
 
 ## Getting Started :chart_with_upwards_trend:
-
 
 ### Import the library
 
