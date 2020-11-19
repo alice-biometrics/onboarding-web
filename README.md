@@ -148,7 +148,7 @@ To get the userToken please see the authentication section.
 let config = new aliceonboarding.OnboardingConfig()
 .withCustomLocalization("en");
 
-let onboardingCommands = new aliceonboarding.OnboardingCommands(userToken, config);
+let onboardingCommands = new aliceonboarding.OnboardingCommands("alice-onboarding-mount", userToken, config);
 ```
 
 ### Get status command
