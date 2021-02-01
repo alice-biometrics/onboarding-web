@@ -2,7 +2,7 @@
 
 ## Documentation :page_facing_up:
 
-Refer to  https://docs.alicebiometrics.com/onboarding/web.html
+Refer to  https://docs.alicebiometrics.com/onboarding/sections/web_client_side_sdks/html_js.html
 
 ## Contact :mailbox_with_mail:
 
