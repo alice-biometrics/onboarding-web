@@ -121,6 +121,7 @@
     "onboarding_doc_capturer_subtitle_try_manual_capture": "El documento no ha podido ser capturado, prueba la captura manual",
     "onboarding_doc_capturer_title_review": "Revisi\u00f3n de la imagen",
     "onboarding_error_config": "Por favor, revisa tu OnboardingConfig. Debes seleccionar por lo menos un Onboarding Stage.",
+    "onboarding_error_doc_country_not_supported": "Lo sentimos, este tipo de documento no es compatible con el pa\u00eds seleccionado",
     "onboarding_error_loading_resources": "Conexi\u00f3n lenta, int\u00e9ntalo de nuevo m\u00e1s tarde",
     "onboarding_error_storage_is_full_subtitle": "Por favor, elimina alg\u00fan archivo para poder continuar.",
     "onboarding_error_storage_is_full_title": "Error por falta de espacio",
