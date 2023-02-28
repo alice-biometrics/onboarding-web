@@ -83,7 +83,7 @@
   "onboarding_error_title_file_too_big": "El fitxer \u00e9s massa gran",
   "onboarding_error_title_file_type_not_supported": "El fitxer no \u00e9s compatible",
   "onboarding_error_title_selfie": "No s'ha pogut completar l'enviament de l'selfie.",
-  "onboarding_error_title_technical": "Hi ha hagut algun error.",
+  "onboarding_error_title_technical": "Hi ha hagut algun error",
   "onboarding_error_user_not_found": "Usuari no trobat",
   "onboarding_nfc_doc_capturer_alert_positive_is_off": "Activa",
   "onboarding_nfc_doc_capturer_alert_subtitle_is_off": "Cal tenir activat el m\u00f2dul NFC per a la lectura. Vols activar-ara?",

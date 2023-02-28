@@ -83,7 +83,7 @@
   "onboarding_error_title_file_too_big": "Il file \u00e8 troppo grande",
   "onboarding_error_title_file_type_not_supported": "File non supportato",
   "onboarding_error_title_selfie": "Non si \u00e8 potuto inviare il selfie.",
-  "onboarding_error_title_technical": "C'\u00e8 stato un errore.",
+  "onboarding_error_title_technical": "C'\u00e8 stato un errore",
   "onboarding_error_user_not_found": "Utente non trovato",
   "onboarding_nfc_doc_capturer_alert_positive_is_off": "Attivare",
   "onboarding_nfc_doc_capturer_alert_subtitle_is_off": "\u00c8 necessario avere il modulo NFC abilitato per la lettura. Si desidera abilitare ora?",
