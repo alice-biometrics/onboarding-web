@@ -82,6 +82,7 @@
   "onboarding_error_title_connection": "Konexioaren errorea",
   "onboarding_error_title_file_too_big": "Fitxategia handiegia da",
   "onboarding_error_title_file_type_not_supported": "Onartzen ez den fitxategia",
+  "onboarding_error_title_image_type_not_supported": "Irudia ez da onartzen",
   "onboarding_error_title_selfie": "Ezin izan da selfie-lana bidali.",
   "onboarding_error_title_technical": "Akats batzuk gertatu dira",
   "onboarding_error_user_not_found": "Erabiltzailea ez da aurkitu",

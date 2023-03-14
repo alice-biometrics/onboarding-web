@@ -82,6 +82,7 @@
   "onboarding_error_title_connection": "Errore di connessione",
   "onboarding_error_title_file_too_big": "Il file \u00e8 troppo grande",
   "onboarding_error_title_file_type_not_supported": "File non supportato",
+  "onboarding_error_title_image_type_not_supported": "Immagine non supportata",
   "onboarding_error_title_selfie": "Non si \u00e8 potuto inviare il selfie.",
   "onboarding_error_title_technical": "C'\u00e8 stato un errore",
   "onboarding_error_user_not_found": "Utente non trovato",

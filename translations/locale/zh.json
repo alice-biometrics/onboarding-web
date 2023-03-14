@@ -82,6 +82,7 @@
   "onboarding_error_title_connection": "\u8fde\u63a5\u9519\u8bef",
   "onboarding_error_title_file_too_big": "\u6587\u4ef6\u53d8\u5927",
   "onboarding_error_title_file_type_not_supported": "\u6587\u4ef6\u4e0d\u53d7\u652f\u6301",
+  "onboarding_error_title_image_type_not_supported": "\u56fe\u7247\u4e0d\u53d7\u652f\u6301",
   "onboarding_error_title_selfie": "\u65e0\u6cd5\u53d1\u9001\u81ea\u62cd",
   "onboarding_error_title_technical": "\u53d1\u751f\u9519\u8bef",
   "onboarding_error_user_not_found": "\u627e\u4e0d\u5230\u4f7f\u7528\u8005",

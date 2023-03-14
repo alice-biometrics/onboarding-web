@@ -82,6 +82,7 @@
   "onboarding_error_title_connection": "B\u0142\u0105d po\u0142\u0105czenia",
   "onboarding_error_title_file_too_big": "Plik jest za du\u017cy",
   "onboarding_error_title_file_type_not_supported": "Plik nie jest obs\u0142ugiwany",
+  "onboarding_error_title_image_type_not_supported": "Obraz nieobs\u0142ugiwany",
   "onboarding_error_title_selfie": "Nie mo\u017cna wys\u0142a\u0107 selfie",
   "onboarding_error_title_technical": "Wyst\u0105pi\u0142 b\u0142\u0105d",
   "onboarding_error_user_not_found": "U\u017cytkownik nie znaleziony",

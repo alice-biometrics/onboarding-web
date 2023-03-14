@@ -82,6 +82,7 @@
   "onboarding_error_title_connection": "\u63a5\u7d9a\u30a8\u30e9\u30fc",
   "onboarding_error_title_file_too_big": "\u30d5\u30a1\u30a4\u30eb\u304c\u5927\u304d\u3059\u304e\u307e\u3059",
   "onboarding_error_title_file_type_not_supported": "\u30b5\u30dd\u30fc\u30c8\u3055\u308c\u3066\u3044\u306a\u3044\u30d5\u30a1\u30a4\u30eb",
+  "onboarding_error_title_image_type_not_supported": "\u753b\u50cf\u306f\u30b5\u30dd\u30fc\u30c8\u3055\u308c\u3066\u3044\u307e\u305b\u3093",
   "onboarding_error_title_selfie": "\u30bb\u30eb\u30d5\u30a3\u30fc\u3092\u9001\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u305b\u3093\u3067\u3057\u305f\u3002",
   "onboarding_error_title_technical": "\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f",
   "onboarding_error_user_not_found": "\u30e6\u30fc\u30b6\u30fc\u304c\u898b\u3064\u304b\u308a\u307e\u305b\u3093",
