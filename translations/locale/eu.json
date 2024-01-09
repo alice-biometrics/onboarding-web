@@ -132,7 +132,7 @@
   "onboarding_selfie_cancel": "Utzi",
   "onboarding_selfie_capturer_adding": "Selfie gehitzen ...",
   "onboarding_selfie_capturer_adding_with_challenge": "Selfie erronkarekin gehitzen...",
-  "onboarding_selfie_capturer_adding_with_document": "Selfie dokumentuarekin gehitzen\u2026",
+  "onboarding_selfie_capturer_adding_with_document": "Selfie dokumentuarekin gehitzen…",
   "onboarding_selfie_capturer_authenticating": "Autentifikatzen ...",
   "onboarding_selfie_capturer_button_tutorial": "Ados, lortu!",
   "onboarding_selfie_capturer_center_face": "Mesedez dutelakoan zure aurpegia obalatua hasi",
@@ -178,11 +178,5 @@
   "onboarding_stages_selfie_with_document_challenge": "Selfie erronkarekin",
   "onboarding_stages_start_button": "HASI",
   "onboarding_stages_title": "identitate egiaztatzea",
-  "onboarding_welcome_email": "E-mail",
-  "onboarding_welcome_first_name": "Izena",
-  "onboarding_welcome_last_name": "Abizena",
-  "onboarding_welcome_start": "Egiaztatzeko identitate",
-  "onboarding_welcome_subtitle": "Erabiltzaile kontu bat sortzeko, zure identitatea verficar behar dugu. Just hartu minutu bat.",
-  "onboarding_welcome_title": "Alice Onboarding",
   "onboarding_yes": "Bai"
 }
