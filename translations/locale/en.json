@@ -1,5 +1,5 @@
 {
-  "onboarding_alert_subtitle_really_sure_to_exit": "Are you really sure to exit?",
+  "onboarding_alert_subtitle_really_sure_to_exit": "Are you sure you want to exit?",
   "onboarding_alert_title_really_sure_to_exit": "Incomplete process",
   "onboarding_ask_for_permissions_cancel_button": "Cancel",
   "onboarding_ask_for_permissions_ok_button": "Open Settings",
@@ -155,6 +155,7 @@
   "onboarding_selfie_capturer_look_camera": "Look at the camera",
   "onboarding_selfie_capturer_move_farther": "Move your device farther",
   "onboarding_selfie_capturer_no_face": "No face detected",
+  "onboarding_selfie_capturer_stay_still": "Stay still",
   "onboarding_selfie_capturer_subtitle": "Please, proceed with the capture",
   "onboarding_selfie_capturer_subtitle_insufficient_faces": "Make sure to keep your face in the oval in good lighting conditions throughout the process",
   "onboarding_selfie_capturer_subtitle_review": "Please, make sure that your picture is good",

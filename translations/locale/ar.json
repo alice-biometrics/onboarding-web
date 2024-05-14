@@ -1,5 +1,5 @@
 {
-  "onboarding_alert_subtitle_really_sure_to_exit": "هل أنت متأكد حقًا من الخروج؟",
+  "onboarding_alert_subtitle_really_sure_to_exit": "هل أنت متأكد أنك تريد الخروج؟",
   "onboarding_alert_title_really_sure_to_exit": "عملية غير مكتملة",
   "onboarding_ask_for_permissions_cancel_button": "يلغي",
   "onboarding_ask_for_permissions_ok_button": "أفتح الإعدادات",
@@ -155,6 +155,7 @@
   "onboarding_selfie_capturer_look_camera": "ينظر للكاميرا",
   "onboarding_selfie_capturer_move_farther": "حرك جهازك أبعد",
   "onboarding_selfie_capturer_no_face": "لم يتم اكتشاف وجه",
+  "onboarding_selfie_capturer_stay_still": "اثبت مكانك",
   "onboarding_selfie_capturer_subtitle": "من فضلك ، تابع القبض",
   "onboarding_selfie_capturer_subtitle_insufficient_faces": "تأكد من إبقاء وجهك في الشكل البيضاوي في ظروف الإضاءة الجيدة طوال العملية",
   "onboarding_selfie_capturer_subtitle_review": "من فضلك ، تأكد من أن صورتك جيدة",

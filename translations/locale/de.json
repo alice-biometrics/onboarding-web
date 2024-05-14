@@ -1,5 +1,5 @@
 {
-  "onboarding_alert_subtitle_really_sure_to_exit": "Sind Sie wirklich sicher zu beenden?",
+  "onboarding_alert_subtitle_really_sure_to_exit": "Sie sind sicher, dass Sie beenden wollen?",
   "onboarding_alert_title_really_sure_to_exit": "Unvollständiger Prozess",
   "onboarding_ask_for_permissions_cancel_button": "Stornieren",
   "onboarding_ask_for_permissions_ok_button": "Einstellungen öffnen",
@@ -155,6 +155,7 @@
   "onboarding_selfie_capturer_look_camera": "Schau in die Kamera",
   "onboarding_selfie_capturer_move_farther": "Bitte bewegen Sie Ihr Gerät weiter",
   "onboarding_selfie_capturer_no_face": "Kein Gesicht erkannt",
+  "onboarding_selfie_capturer_stay_still": "Bleib still",
   "onboarding_selfie_capturer_subtitle": "Bitte fahren Sie mit der Erfassung fort",
   "onboarding_selfie_capturer_subtitle_insufficient_faces": "Achten Sie darauf, dass Ihr Gesicht während des gesamten Vorgangs bei guten Lichtverhältnissen im Oval bleibt",
   "onboarding_selfie_capturer_subtitle_review": "Bitte stellen Sie sicher, dass Ihr Bild gut ist",

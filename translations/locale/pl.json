@@ -1,5 +1,5 @@
 {
-  "onboarding_alert_subtitle_really_sure_to_exit": "Czy na pewno chcesz wyjść?",
+  "onboarding_alert_subtitle_really_sure_to_exit": "Czy jesteś pewny że chcesz wyjść?",
   "onboarding_alert_title_really_sure_to_exit": "Niekompletny proces",
   "onboarding_ask_for_permissions_cancel_button": "Anuluj",
   "onboarding_ask_for_permissions_ok_button": "Otwórz ustawienia",
@@ -155,6 +155,7 @@
   "onboarding_selfie_capturer_look_camera": "Spójrz na aparat",
   "onboarding_selfie_capturer_move_farther": "Przesuń swoje urządzenie dalej",
   "onboarding_selfie_capturer_no_face": "Brak wykrycia twarzy",
+  "onboarding_selfie_capturer_stay_still": "Nie ruszaj się",
   "onboarding_selfie_capturer_subtitle": "Proszę kontynuować przechwytywanie",
   "onboarding_selfie_capturer_subtitle_insufficient_faces": "Upewnij się, że twarz jest w owalu, w dobrych warunkach oświetleniowych przez cały czas trwania zabiegu",
   "onboarding_selfie_capturer_subtitle_review": "Upewnij się, że Twoje zdjęcie jest dobre",

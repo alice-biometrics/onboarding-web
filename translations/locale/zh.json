@@ -1,5 +1,5 @@
 {
-  "onboarding_alert_subtitle_really_sure_to_exit": "您确定要退出吗",
+  "onboarding_alert_subtitle_really_sure_to_exit": "你确定要离开？",
   "onboarding_alert_title_really_sure_to_exit": "流程不完整",
   "onboarding_ask_for_permissions_cancel_button": "取消",
   "onboarding_ask_for_permissions_ok_button": "打开设置",
@@ -155,6 +155,7 @@
   "onboarding_selfie_capturer_look_camera": "看相机",
   "onboarding_selfie_capturer_move_farther": "将设备移动到更远的地方",
   "onboarding_selfie_capturer_no_face": "没有检测到的脸",
+  "onboarding_selfie_capturer_stay_still": "保持静止",
   "onboarding_selfie_capturer_subtitle": "请继续进行捕获",
   "onboarding_selfie_capturer_subtitle_insufficient_faces": "确保整个过程中在良好的照明条件下保持脸部呈椭圆形",
   "onboarding_selfie_capturer_subtitle_review": "请确保您的图片好",

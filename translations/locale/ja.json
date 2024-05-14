@@ -1,5 +1,5 @@
 {
-  "onboarding_alert_subtitle_really_sure_to_exit": "本当に終了しますか？",
+  "onboarding_alert_subtitle_really_sure_to_exit": "本当に終了してもよろしいですか？",
   "onboarding_alert_title_really_sure_to_exit": "不完全なプロセス",
   "onboarding_ask_for_permissions_cancel_button": "キャンセル",
   "onboarding_ask_for_permissions_ok_button": "設定を開く",
@@ -155,6 +155,7 @@
   "onboarding_selfie_capturer_look_camera": "カメラを見てください",
   "onboarding_selfie_capturer_move_farther": "デバイスをさらに移動します",
   "onboarding_selfie_capturer_no_face": "顔は検出されません",
+  "onboarding_selfie_capturer_stay_still": "じっとしてて",
   "onboarding_selfie_capturer_subtitle": "キャプチャを進めてください",
   "onboarding_selfie_capturer_subtitle_insufficient_faces": "プロセス全体を通じて、良好な照明条件で顔を楕円形に保つようにしてください。",
   "onboarding_selfie_capturer_subtitle_review": "あなたの写真が良いことを確認してください",

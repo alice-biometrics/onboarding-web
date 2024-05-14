@@ -1,5 +1,5 @@
 {
-  "onboarding_alert_subtitle_really_sure_to_exit": "Çıkacağına gerçekten emin misin?",
+  "onboarding_alert_subtitle_really_sure_to_exit": "Çıkmak istediğine emin misin?",
   "onboarding_alert_title_really_sure_to_exit": "Eksik süreç",
   "onboarding_ask_for_permissions_cancel_button": "İptal",
   "onboarding_ask_for_permissions_ok_button": "Ayarları aç",
@@ -154,6 +154,7 @@
   "onboarding_selfie_capturer_look_camera": "Kameraya bak",
   "onboarding_selfie_capturer_move_farther": "Cihazınızı daha uzağa taşıyın",
   "onboarding_selfie_capturer_no_face": "Yüz tespit edilmedi",
+  "onboarding_selfie_capturer_stay_still": "Sabit kal",
   "onboarding_selfie_capturer_subtitle": "Lütfen ele geçirmeye devam edin",
   "onboarding_selfie_capturer_subtitle_insufficient_faces": "İşlem boyunca iyi ışık koşullarında yüzünüzü oval tutmaya dikkat edin",
   "onboarding_selfie_capturer_subtitle_review": "Lütfen resminizin iyi olduğundan emin olun",
