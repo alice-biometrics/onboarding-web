@@ -127,6 +127,8 @@
   "onboarding_other_trusted_docs_pdf_not_allowed": "El darrer document pujat va ser una imatge, continua pujant imatges",
   "onboarding_other_trusted_docs_subtitle": "Si us plau, tria un PDF o una imatge",
   "onboarding_other_trusted_docs_upload_another_image": "Adjuntar més imatges",
+  "onboarding_permission_description": "Per continuar amb la verificació, necessitem accedir a la teva càmera. Podeu concedir-nos l'accés fent clic al botó següent.",
+  "onboarding_permission_title": "Permet l'accés a la càmera",
   "onboarding_qr_button": "Continuar en aquest dispositiu",
   "onboarding_qr_info_text": "Hem detectat que estàs utilitzant un PC. Les càmeres web dels PC solen ser de mala qualitat. Per facilitar el procés, recomanem utilitzar un mòbil.",
   "onboarding_qr_info_text_extra": "Vols continuar el procés d'onboarding al teu mòbil? Només has d'escanejar aquest codi QR:",
@@ -203,5 +205,6 @@
   "onboarding_tutorial_second_subtitle": "Però abans de començar, assegura't que:",
   "onboarding_tutorial_third_instruction": "No portes res que cobreixi la teva cara. Pots mantenir les teves ulleres.",
   "onboarding_tutorial_title": "Anem a fer un selfie",
-  "onboarding_yes": "Sí"
+  "onboarding_yes": "Sí",
+  "onboarding_timeout_modal_description": "Heu superat el temps màxim permès. \nSi us plau, torna-ho a provar."
 }

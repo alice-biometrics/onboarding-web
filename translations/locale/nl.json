@@ -127,6 +127,8 @@
   "onboarding_other_trusted_docs_pdf_not_allowed": "Het laatste geüploade document was een afbeelding, blijf afbeeldingen uploaden",
   "onboarding_other_trusted_docs_subtitle": "Kies een PDF of een afbeelding",
   "onboarding_other_trusted_docs_upload_another_image": "Voeg meer afbeeldingen toe",
+  "onboarding_permission_description": "Om door te gaan met uw verificatie hebben we toegang tot uw camera nodig. U kunt ons toegang verlenen door op onderstaande knop te klikken.",
+  "onboarding_permission_title": "Cameratoegang toestaan",
   "onboarding_qr_button": "Ga verder op dit apparaat",
   "onboarding_qr_info_text": "We zien dat je een pc gebruikt. PC -webcams zijn vaak van slechte kwaliteit. Om het proces eenvoudiger te maken, raden we je aan om een ​​mobiel te gebruiken.",
   "onboarding_qr_info_text_extra": "Wil je doorgaan met je registratie op je mobiel? Scan deze QR:",
@@ -203,5 +205,6 @@
   "onboarding_tutorial_second_subtitle": "Maar voordat we beginnen, zorg ervoor dat:",
   "onboarding_tutorial_third_instruction": "Je draagt niets dat je gezicht bedekt. Je bril mag je ophouden",
   "onboarding_tutorial_title": "Laten we een selfie maken",
-  "onboarding_yes": "Ja"
+  "onboarding_yes": "Ja",
+  "onboarding_timeout_modal_description": "U heeft de maximaal toegestane tijd overschreden. \nProbeer het opnieuw."
 }
