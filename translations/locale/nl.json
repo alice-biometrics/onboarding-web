@@ -197,6 +197,7 @@
   "onboarding_stages_selfie_with_document_challenge": "Selfie met uitdaging",
   "onboarding_stages_start_button": "BEGIN",
   "onboarding_stages_title": "Identiteit verificatie",
+  "onboarding_timeout_modal_description": "U heeft de maximaal toegestane tijd overschreden. Probeer het opnieuw.",
   "onboarding_tutorial_back_button": "Uitgaan",
   "onboarding_tutorial_continue_button": "Ik ben klaar!",
   "onboarding_tutorial_first_instruction": "Je bevindt je in een goed verlichte ruimte",
@@ -205,6 +206,5 @@
   "onboarding_tutorial_second_subtitle": "Maar voordat we beginnen, zorg ervoor dat:",
   "onboarding_tutorial_third_instruction": "Je draagt niets dat je gezicht bedekt. Je bril mag je ophouden",
   "onboarding_tutorial_title": "Laten we een selfie maken",
-  "onboarding_yes": "Ja",
-  "onboarding_timeout_modal_description": "U heeft de maximaal toegestane tijd overschreden. \nProbeer het opnieuw."
+  "onboarding_yes": "Ja"
 }

@@ -197,6 +197,7 @@
   "onboarding_stages_selfie_with_document_challenge": "Selfie med utmaning",
   "onboarding_stages_start_button": "START",
   "onboarding_stages_title": "Identitetsverifiering",
+  "onboarding_timeout_modal_description": "Du har överskridit den maximala tillåtna tiden. Försök igen.",
   "onboarding_tutorial_back_button": "Gå ut",
   "onboarding_tutorial_continue_button": "Jag är redo!",
   "onboarding_tutorial_first_instruction": "Du befinner dig i ett väl upplyst utrymme",
@@ -205,6 +206,5 @@
   "onboarding_tutorial_second_subtitle": "Men innan vi börjar, se till att:",
   "onboarding_tutorial_third_instruction": "Du har inte på dig något som täcker ditt ansikte. Du kan behålla dina glasögon",
   "onboarding_tutorial_title": "Låt oss ta en selfie",
-  "onboarding_yes": "Ja",
-  "onboarding_timeout_modal_description": "Du har överskridit den maximala tillåtna tiden. \nFörsök igen."
+  "onboarding_yes": "Ja"
 }
